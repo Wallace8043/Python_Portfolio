@@ -2088,10 +2088,10 @@ output_file_name = input('Enter the name of the output file: ')
 # Save the RNA sequence to a text file
 with open(output_file_name, 'w') as output_file:
     output_file.write(rna_sequence)
-    print("The RNA sequence has been saved to {output_file_name}")
+    print(f"The RNA sequence has been saved to {output_file_name}")
 ```
 
-    The RNA sequence has been saved to {output_file_name}
+    The RNA sequence has been saved to TP53_RNA.txt
 
 
 
