@@ -678,6 +678,7 @@ print("small is:\n", small)
 
 
 ```python
+# Let's use a numpy function
 print(numpy.mean(data))
 ```
 
@@ -735,6 +736,8 @@ print("standard deviation:", stdval)
 
 
 ```python
+# Sometimes we want to look at variation in statistical values, such as maximum inflammation per patient,
+# or average from day one.
 patient_0 = data[0, :]
 
 print("maximum inflammation for patient 0:", numpy.amax(patient_0))
