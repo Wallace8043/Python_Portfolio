@@ -1340,13 +1340,18 @@ print(celsius_val2)
 
 ```python
 def explicit_fahr_to_celsius(temp):
+    # Assign the converted value to a variable
     converted = ((temp-32)*(5/9))
+    # Return the values of the new variable
     return converted
 ```
 
 
 ```python
 def fahr_to_celsius(temp):
+    # Return converted values more efficiently using the return function without creating
+    # a new variable. This code does the same thing as the previous function but it is more
+    # explicit in explaining how the return command works.
     return ((temp-32)*(5/9))
 ```
 
@@ -1404,23 +1409,6 @@ print('boiling point of water in Kelvin:', fahr_to_kelvin(212.0))
 ```
 
     boiling point of water in Kelvin: 373.15
-
-
-
-```python
-print('Again, temperature in Kelvin was:', temp_k)
-```
-
-
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-20-eed2471d229b> in <module>
-    ----> 1 print('Again, temperature in Kelvin was:', temp_k)
-    
-
-    NameError: name 'temp_k' is not defined
 
 
 
@@ -1686,6 +1674,9 @@ def offset_mean(data, target_mean_value):
 
 
 ```python
+# offset_mean(data, target_mean_value):
+# return a new array containing the original data with its mean offset to match the desired value.
+# This data should be inputed as measurements in columns and samples in rows
 def offset_mean(data, target_mean_value):
     """Return a new array containing the original data with its mean offset to match the desired value """
     return(data - numpy.mean(data)) + target_mean_value
@@ -1752,39 +1743,6 @@ numpy.loadtxt('inflammation-01.csv', delimiter = ',')
            [0., 1., 1., ..., 1., 1., 1.],
            [0., 0., 0., ..., 0., 2., 0.],
            [0., 0., 1., ..., 1., 1., 0.]])
-
-
-
-
-```python
-numpy.loadtxt('inflammation-01.csv', ',')
-```
-
-
-    Traceback (most recent call last):
-
-
-      File "/home/student/anaconda3/lib/python3.7/site-packages/IPython/core/interactiveshell.py", line 3326, in run_code
-        exec(code_obj, self.user_global_ns, self.user_ns)
-
-
-      File "<ipython-input-27-d0d3ef43afeb>", line 1, in <module>
-        numpy.loadtxt('inflammation-01.csv', ',')
-
-
-      File "/home/student/anaconda3/lib/python3.7/site-packages/numpy/lib/npyio.py", line 1087, in loadtxt
-        dtype = np.dtype(dtype)
-
-
-      File "/home/student/anaconda3/lib/python3.7/site-packages/numpy/core/_internal.py", line 201, in _commastring
-        newitem = (dtype, eval(repeats))
-
-
-      File "<string>", line 1
-        ,
-        ^
-    SyntaxError: unexpected EOF while parsing
-
 
 
 
