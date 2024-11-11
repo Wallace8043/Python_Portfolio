@@ -329,7 +329,6 @@ matplotlib.pyplot.show()
 ```
 
 
-![png](output_23_0.png)
 ![output_23_0](https://github.com/user-attachments/assets/aa32a84f-a8b6-47c3-a670-67b92a42aa91)
 
 
@@ -341,7 +340,6 @@ matplotlib.pyplot.show()
 ```
 
 
-![png](output_24_0.png)
 ![output_24_0](https://github.com/user-attachments/assets/6e7559ce-3764-432b-8372-4e35be5231ff)
 
 
@@ -352,7 +350,6 @@ matplotlib.pyplot.show()
 ```
 
 
-![png](output_25_0.png)
 ![output_25_0](https://github.com/user-attachments/assets/3f2c019c-ebf8-4207-b85b-5bf0db15df73)
 
 
@@ -363,7 +360,6 @@ matplotlib.pyplot.show()
 ```
 
 
-![png](output_26_0.png)
 ![output_26_0](https://github.com/user-attachments/assets/6713cbd0-153e-4052-95f0-c393ec6a733f)
 
 
@@ -391,7 +387,6 @@ matplotlib.pyplot.show()
 ```
 
 
-![png](output_27_0.png)
 ![output_27_0](https://github.com/user-attachments/assets/3b29204f-8482-4ef8-90eb-d2c78456cf10)
 
 
