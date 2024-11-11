@@ -886,15 +886,22 @@ print('"-1" element:', odds[-1])
 
 
 ```python
-names = ["Curie", "Darwing", "Turing"]
+names = ["Curie", "Darwing", "Turing"] # Typo in Darwin's name
 
 print("names is originally:", names)
-names[1] = "Darwin"
+names[1] = "Darwin" # Correct the name
 print("final value of names:", names)
 ```
 
     names is originally: ['Curie', 'Darwing', 'Turing']
     final value of names: ['Curie', 'Darwin', 'Turing']
+
+
+
+```python
+# name = 'Darwin'
+# name[0] = 'd'
+```
 
 
 
