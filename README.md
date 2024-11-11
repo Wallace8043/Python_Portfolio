@@ -660,3 +660,75 @@ print(len(name))
 ```python
 
 ```
+
+## Using Multiple Files
+
+```python
+import glob
+```
+
+
+```python
+print(glob.glob('inflammation*.csv'))
+```
+
+    ['inflammation-10.csv', 'inflammation-09.csv', 'inflammation-11.csv', 'inflammation-06.csv', 'inflammation-05.csv', 'inflammation-08.csv', 'inflammation-01.csv', 'inflammation-07.csv', 'inflammation-04.csv', 'inflammation-03.csv', 'inflammation-02.csv', 'inflammation-12.csv']
+
+
+
+```python
+import numpy
+import matplotlib.pyplot
+
+filenames = sorted(glob.glob('inflammation*.csv'))
+filenames = filenames[0:3]
+
+for filename in filenames:
+    print(filename)
+    
+    data = numpy.loadtxt(fname=filename, delimiter = ',')
+    
+    fig = matplotlib.pyplot.figure(figsize = (10.0, 3.0))
+    
+    axes1 = fig.add_subplot(1,3,1)
+    axes2 = fig.add_subplot(1,3,2)
+    axes3 = fig.add_subplot(1,3,3)
+    
+    axes1.set_ylabel('average')
+    axes1.plot(numpy.mean(data, axis = 0))
+    
+    axes2.set_ylabel('max')
+    axes2.plot(numpy.amax(data, axis = 0))
+    
+    axes3.set_ylabel('min')
+    axes3.plot(numpy.amin(data, axis = 0))
+    
+    fig.tight_layout()
+    matplotlib.pyplot.show()
+```
+
+    inflammation-01.csv
+
+
+
+![output_2_1](https://github.com/user-attachments/assets/501681de-39d1-4a6b-8f15-8c9d78f47ac8)
+
+
+    inflammation-02.csv
+
+
+
+![output_2_3](https://github.com/user-attachments/assets/e5a134b5-13a2-4a03-bb17-2b36133b3f96)
+
+
+    inflammation-03.csv
+
+
+
+![output_2_5](https://github.com/user-attachments/assets/b076efb3-7903-4851-9eac-6220e6249271)
+
+
+
+```python
+
+```
