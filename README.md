@@ -1040,34 +1040,6 @@ print(odds[3])
 
 
 ```python
-odds = [1,3,5]
-print(odds[0])
-print(odds[1])
-print(odds[2])
-print(odds[3])
-```
-
-    1
-    3
-    5
-
-
-
-    ---------------------------------------------------------------------------
-
-    IndexError                                Traceback (most recent call last)
-
-    <ipython-input-3-01ba67d8a9e5> in <module>
-          3 print(odds[1])
-          4 print(odds[2])
-    ----> 5 print(odds[3])
-    
-
-    IndexError: list index out of range
-
-
-
-```python
 odds = [1,3,5,7,9,11,13,15,17,19]
 
 for num in odds:
